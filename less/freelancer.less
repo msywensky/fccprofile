@@ -71,6 +71,10 @@ hr.star-primary:after {
 	margin: 0 auto;
 }
 
+.portrait {
+	max-width:500px;
+}
+
 header {
 	text-align: center;
 	background: @brand-success;
@@ -260,6 +264,23 @@ section.success {
 	}
 }
 
+.btn-outline2 {
+	color: black;
+	font-size: 20px;
+	border: solid 2px black;
+	background: transparent;
+	transition: all 0.3s ease-in-out;
+	margin-top: 15px;
+	&:hover,
+	&:focus,
+	&:active,
+	&.active {
+		color: @brand-success;
+		background: white;
+		border: solid 2px black;
+	}
+}
+
 .floating-label-form-group {
     position: relative;
     margin-bottom: 0;
@@ -340,6 +361,17 @@ footer {
 	height: 50px;
 	width: 50px;
 	border: 2px solid white;
+	border-radius: 100%;
+	text-align: center;
+	font-size: 20px;
+	line-height: 45px;
+}
+
+.btn-social2 {
+	display: inline-block;
+	height: 50px;
+	width: 50px;
+	border: 2px solid @brand-primary;
 	border-radius: 100%;
 	text-align: center;
 	font-size: 20px;
